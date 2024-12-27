@@ -1,0 +1,9 @@
+function MAT = mat_plus1(matrix,new)
+[a,b] = size(matrix);
+up = zeros(new-2,b);
+down = up;
+Matrix = [up;matrix;down];
+[a,b] = size(Matrix);
+left = zeros(a,new-2);
+right = left;
+MAT = [left,Matrix,right];
